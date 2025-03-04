@@ -10,8 +10,8 @@
  {
      cx_float_t average; 
      
-     average.re = (a.re + b.re) / 2;
-     average.imm = (a.imm + b.imm) / 2;
+     average.re = mean(a.re,b.re);
+     average.imm = mean(a.imm,b.imm);
  
      return average; 
  }
